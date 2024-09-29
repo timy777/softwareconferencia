@@ -12,6 +12,8 @@ import { CounterComponent } from './counter/counter.component';
 import { EventComponent } from './event/event.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ClientComponent } from './client/client.component';
+import { ConferenceComponent } from './conference/conference.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { ClientComponent } from './client/client.component';
     CounterComponent,
     EventComponent,
     FeatureComponent,
-    ClientComponent
+    ClientComponent,
+    ConferenceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
